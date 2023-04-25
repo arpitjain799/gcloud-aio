@@ -36,7 +36,7 @@ repos:
     -   id: name-tests-test
     -   id: requirements-txt-fixer
 -   repo: https://github.com/PyCQA/pylint
-    rev: v2.17.2
+    rev: v3.0.0a6
     hooks:
     -   id: pylint
         additional_dependencies:
@@ -73,7 +73,7 @@ repos:
     -   id: reorder-python-imports
         args: [--py37-plus]
 -   repo: https://github.com/asottile/pyupgrade
-    rev: v3.3.1
+    rev: v3.3.2
     hooks:
     -   id: pyupgrade
         args: [--py37-plus]
@@ -174,7 +174,7 @@ repos:
     -   id: autopep8
         args: [-a, -i, -p2]
 -   repo: https://github.com/PyCQA/flake8
-    rev: 5.0.4
+    rev: 6.0.0
     hooks:
     -   id: flake8
         additional_dependencies: *flake8deps
